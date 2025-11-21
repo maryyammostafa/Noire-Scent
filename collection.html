@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noiré Scent</title>
+    <link rel="shortcut icon" href="./Images/favIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/plugins/all.min.css">
+    <link rel="stylesheet" href="CSS/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/plugins/swiper.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container position-relative">
+            <a class="navbar-brand m-0 p-0" href="index.html">
+                <img src="Images/logo.png" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="ourStory.html">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="icons">
+                    <i class="fa-regular fa-heart me-2" onclick="openPopUp('fav')"></i>
+                    <i class="fa-solid fa-bag-shopping cartIcon" onclick="openPopUp('cart')"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="header">
+        <div id="tsparticles"></div>
+        <div class="container">
+            <h2>Discover the Essence of Elegance</h2>
+            <p>Step into a world where scent becomes identity.</p>
+        </div>
+    </section>
+
+    <section id="Collections">
+        <div class="title text-center">
+            <h2>Male collection</h2>
+            <img src="./Images/separator.svg" alt="" class="img-fluid">
+        </div>
+        <div class="swiper male">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="title text-center">
+            <h2>Female collection</h2>
+            <img src="./Images/separator.svg" alt="" class="img-fluid">
+        </div>
+        <div class="swiper female">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="title text-center">
+            <h2>UniSex collection</h2>
+            <img src="./Images/separator.svg" alt="" class="img-fluid">
+        </div>
+        <div class="swiper unisex">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="Images/logo.png" class="img-fluid" alt="">
+            <p class="m-0">© 2025 Noiré Scent. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading">
+        <div class="container text-center">
+            <h2>Noiré Scent</h2>
+            <div class="gold-line"></div>
+        </div>
+    </div>
+
+    <div class="popUp product" onclick="closePopUp()">
+        <div class="box">
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row stop"></div>
+        </div>
+    </div>
+    <div class="popUp cart " onclick="closePopUp()">
+        <div class="box">
+            <div class="title text-center mb-4">
+                <h2>Shopping Cart</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row"></div>
+            <div class="btns">
+                <button class="btn" onclick="removeAll()">Remove All</button>
+                <button class="btn checkout" onclick="checkout()">Continue</button>    
+            </div>
+            <div class="empty">
+                <h5>The Cart Is Empty</h5>
+            </div>
+        </div>
+    </div>
+    <div class="popUp fav" onclick="closePopUp()">
+        <div class="box">
+            <div class="title text-center mb-4">
+                <h2>Favourite Cart</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row"></div>
+            <div class="empty">
+                <h5>No Favourite Products</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/plugins/magicMouse.js"></script>
+    <script src="JS/plugins/bootstrap.min.js"></script>
+    <script src="JS/plugins/jQuery.js"></script>
+    <script src="JS/plugins/tsP.engine.min.js"></script>
+    <script src="JS/plugins/tsP.basic.min.js"></script>
+    <script src="JS/plugins/tsP.bundle.min.js"></script>
+    <script src="JS/plugins/swiper.min.js"></script>
+    <script src="JS/plugins/sweetAlert.js"></script>
+    <script src="JS/functions.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/collection.js"></script>
+</body>
+</html>

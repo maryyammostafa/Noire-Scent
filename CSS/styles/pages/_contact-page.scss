@@ -1,0 +1,119 @@
+@use "../abstracts" as *;
+
+#Contact{
+    .container{
+        .box{
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.03);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            width: 450px;
+            margin-inline: auto;
+            padding: 20px;
+            @include position($p: relative, $z: 3);
+            @include respond(350){
+                width: 300px;
+            }
+            @include respond(650){
+                width: 380px;
+            }
+            @include respond(1250){
+                width: 420px;
+            }
+            img{
+                display: block;
+                margin-inline: auto;
+                width: 200px;
+                margin-bottom: 20px;
+                @include respond(350){
+                    width: 150px;
+                }
+                @include respond(1050){
+                    width: 180px;
+                }
+            }
+            form{
+                input,
+                textarea{
+                    width: 100%;
+                    background-color: rgba(255,255,255,0.03);
+                    color: #a7a7a7;
+                    border: none;
+                    border-radius: 8px;
+                    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3), 0 0 10px rgba(255, 201, 77, 0.15);
+                    padding: 6px 12px;
+                    margin-bottom: 20px;
+                    outline: none;
+                    @include respond(350){
+                        padding: 6px 10px;
+                    }
+                    &::placeholder{
+                        color: #a7a7a7a7;
+                    }
+                }
+                textarea{
+                    resize: none;
+                }
+                p{
+                    color: $mainColor;
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                }
+                button{
+                    width: 100%;
+                    color: $mainColor;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+#GetInTouch{
+    padding-top: 0;
+    .container{
+        .info{
+            width: fit-content;
+            margin-inline: auto;
+            .box{
+                @include flex(start);
+                margin-top: 5px;
+                i{
+                    color: $mainColor;
+                    text-shadow: $mainShadow;
+                    font-size: 20px;
+                    @include respond(350){
+                        font-size: 18px;
+                    }
+                    @include respond(1250){
+                        font-size: 20px;
+                    }
+                }
+                h3{
+                    margin-bottom: 0;
+                    margin-inline: 10px;
+                    color: $mainColor;
+                    text-shadow: $mainShadow;
+                    @include respond(350){
+                        font-size: 20px;
+                    }
+                    @include respond(1250){
+                        font-size: 25px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: #a7a7a7;
+                    font-size: 19px;
+                    @include respond(350){
+                        font-size: 16px;
+                    }
+                    @include respond(1250){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

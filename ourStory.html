@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noiré Scent</title>
+    <link rel="shortcut icon" href="./Images/favIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/plugins/all.min.css">
+    <link rel="stylesheet" href="CSS/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/plugins/aos.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container position-relative">
+            <a class="navbar-brand m-0 p-0" href="index.html">
+                <img src="Images/logo.png" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ourStory.html">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="icons">
+                    <i class="fa-regular fa-heart me-2" onclick="openPopUp('fav')"></i>
+                    <i class="fa-solid fa-bag-shopping cartIcon" onclick="openPopUp('cart')"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Header">
+        <!-- <div id="tsparticles"></div> -->
+        <div class="img" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="Images/ourstoryPerfume.png" class="img-fluid" alt="">
+        </div>
+        <div class="content text-center">
+            <h2 id="fadeText"></h2>
+        </div>
+    </section>
+
+    <section id="OurStory">
+        <div id="tsP"></div>
+        <div class="title text-center mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Our Story</h2>
+            <img src="./Images/separator.svg" alt="" class="img-fluid">
+        </div>
+        <div class="container">
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-md-6 part1 text-md-end">
+                    <div class="item ms-md-auto">
+                        <div class="box">
+                            <div class="content">
+                                <h3>2020 — The Spark</h3>
+                                <p>The first idea, first drop, first dream.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 part2">
+                    <div class="item">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse reversed" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-md-6 part1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="content">
+                                <h3>2021 — The Breakthrough</h3>
+                                <p>Our perfumes reached more people than we ever expected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 part2">
+                    <div class="item">
+                        <div class="dot center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-md-6 part1 text-md-end">
+                    <div class="item ms-md-auto">
+                        <div class="box">
+                            <div class="content">
+                                <h3>2023 — Crafting Identity</h3>
+                                <p>We refined our style, our philosophy, our scents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 part2">
+                    <div class="item">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse reversed" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-md-6 part1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="content">
+                                <h3>2025 — The Future Begins</h3>
+                                <p>A new chapter filled with elegance, creativity, and stories yet to be written.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 part2">
+                    <div class="item">
+                        <div class="dot center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="Images/logo.png" class="img-fluid" alt="">
+            <p class="m-0">© 2025 Noiré Scent. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading">
+        <div class="container text-center">
+            <h2>Noiré Scent</h2>
+            <div class="gold-line"></div>
+        </div>
+    </div>
+
+    <div class="popUp cart " onclick="closePopUp()">
+        <div class="box">
+            <div class="title text-center mb-4">
+                <h2>Shopping Cart</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row"></div>
+            <div class="btns">
+                <button class="btn" onclick="removeAll()">Remove All</button>
+                <button class="btn checkout" onclick="checkout()">Continue</button>    
+            </div>
+            <div class="empty">
+                <h5>The Cart Is Empty</h5>
+            </div>
+        </div>
+    </div>
+    <div class="popUp fav" onclick="closePopUp()">
+        <div class="box">
+            <div class="title text-center mb-4">
+                <h2>Favourite Cart</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row"></div>
+            <div class="empty">
+                <h5>No Favourite Products</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/plugins/magicMouse.js"></script>
+    <script src="JS/plugins/bootstrap.min.js"></script>
+    <script src="JS/plugins/jQuery.js"></script>
+    <script src="JS/plugins/tsP.engine.min.js"></script>
+    <script src="JS/plugins/tsP.basic.min.js"></script>
+    <script src="JS/plugins/tsP.bundle.min.js"></script>
+    <script src="JS/plugins/sweetAlert.js"></script>
+    <script src="JS/plugins/aos.js"></script>
+    <script src="JS/functions.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/ourStory.js"></script>
+</body>
+</html>

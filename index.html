@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noiré Scent</title>
+    <link rel="shortcut icon" href="./Images/favIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/plugins/all.min.css">
+    <link rel="stylesheet" href="CSS/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/plugins/aos.css">
+    <link rel="stylesheet" href="CSS/plugins/owlCarousel.min.css">
+    <link rel="stylesheet" href="CSS/plugins/owlCarousel.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container position-relative">
+            <a class="navbar-brand m-0 p-0" href="index.html">
+                <img src="Images/logo.png" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="ourStory.html">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="icons">
+                    <i class="fa-regular fa-heart me-2" onclick="openPopUp('fav')"></i>
+                    <i class="fa-solid fa-bag-shopping cartIcon" onclick="openPopUp('cart')"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <img src="./Images/smoke.png" alt="">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-6 part">
+                    <div class="item">
+                        <h2 class="mb-3">Embrace the <br> Essence of <span class="mainColor fw-bold">Luxury</span></h2>
+                        <p>Indulge in the world of luxury perfumes and fragrances at <span class="mainColor fw-bold">Noiré Scent</span>. Discover elegance and sophistication with our exclusive collection that captivates the senses.</p>
+                        <a href="#Signature" class="btn">Signature Scents</a>
+                    </div>
+                </div>
+                <div class="col-md-6 part">
+                    <div class="item">
+                        <img src="./Images/homePerfume.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="About">
+        <div class="container text-center">
+            <div class="title" data-aos="fade-up" data-aos-duration="1000">
+                <h2>About The Brand</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <p>At Noir Essence, we believe that a fragrance is more than just a scent — it’s an emotion, a memory, a statement of identity.
+                Our creations blend timeless elegance with modern artistry, capturing the essence of sophistication in every bottle.</p>
+            <a href="ourStory.html" class="btn">Discover Our Story</a>
+        </div>
+    </section>
+
+    <section id="Signature">
+        <div class="container">
+            <div class="title text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Our Signature Scents</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <p class="text-center">Crafted with timeless luxury and modern sophistication</p>
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item text-center">
+                            <div class="rotatingBorder"></div>
+                            <div class="box">
+                                <img src="Images/signature1.png" class="img-fluid" alt="">
+                                <h3>Amber Essence</h3>
+                                <p>Warm amber blended with soft spice</p>
+                                <div class="button">
+                                    <a href="collection.html">Discover Collections</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item text-center">
+                            <div class="rotatingBorder"></div>
+                            <div class="box">
+                                <img src="Images/signature2.png" class="img-fluid" alt="">
+                                <h3>Azure Mist</h3>
+                                <p>Fresh, crisp, and elegantly smooth</p>
+                                <div class="button">
+                                    <a href="collection.html">Discover Collections</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item text-center">
+                            <div class="rotatingBorder"></div>
+                            <div class="box">
+                                <img src="Images/signature3.png" class="img-fluid" alt="">
+                                <h3>Noir Intense</h3>
+                                <p>Bold and timeless with a hint of mystery</p>
+                                <div class="button">
+                                    <a href="collection.html">Discover Collections</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="Images/logo.png" class="img-fluid" alt="">
+            <p class="m-0">© 2025 Noiré Scent. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading">
+        <div class="container text-center">
+            <h2>Noiré Scent</h2>
+            <div class="gold-line"></div>
+        </div>
+    </div>
+
+    <div class="popUp cart " onclick="closePopUp()">
+        <div class="box">
+            <div class="title text-center mb-4">
+                <h2>Shopping Cart</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row"></div>
+            <div class="btns">
+                <button class="btn" onclick="removeAll()">Remove All</button>
+                <button class="btn checkout" onclick="checkout()">Continue</button>    
+            </div>
+            <div class="empty">
+                <h5>The Cart Is Empty</h5>
+            </div>
+        </div>
+    </div>
+    <div class="popUp fav" onclick="closePopUp()">
+        <div class="box">
+            <div class="title text-center mb-4">
+                <h2>Favourite Cart</h2>
+                <img src="./Images/separator.svg" alt="" class="img-fluid">
+            </div>
+            <i class="fa-solid fa-xmark close" onclick="closePopUp()"></i>
+            <div class="row"></div>
+            <div class="empty">
+                <h5>No Favourite Products</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/plugins/magicMouse.js"></script>
+    <script src="JS/plugins/jQuery.js"></script>
+    <script src="JS/plugins/bootstrap.min.js"></script>
+    <script src="JS/plugins/tsP.engine.min.js"></script>
+    <script src="JS/plugins/tsP.basic.min.js"></script>
+    <script src="JS/plugins/tsP.bundle.min.js"></script>
+    <script src="JS/plugins/sweetAlert.js"></script>
+    <script src="JS/plugins/aos.js"></script>
+    <script src="JS/plugins/owlCarousel.js"></script>
+    <script src="JS/functions.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@use "../abstracts" as *;
+
+
+nav.navbar{
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 10px;
+    background: url(../Images/bg.png) no-repeat;
+    background-size: cover;
+    @include position($p: fixed, $l: 50%, $z: 5);
+    transform: translate(-50%);
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3), 0 0 10px rgba(255, 201, 77, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition-duration: .5s;
+    @include respond(350){
+        width: 90%;
+        background: url(../Images/bg.png) no-repeat center center;
+    }
+    @include respond(650){
+        width: 75%;
+    }
+    @include respond(1050){
+        background: url(../Images/bg.png) no-repeat;
+        background-size: cover;
+    }
+    &.hide{
+        transform: translate(-50%,-140%);
+    }
+    &::before{
+        @include creatEle(100%,100%);
+        @include position($t: 0, $l: 0);
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .navbar-brand{
+        width: 130px;
+        @include respond(350){
+            width: 120px;
+        }
+        @include respond(650){
+            width: 130px;
+        }
+    }
+    .navbar-toggler{
+        color: $mainColor;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 1);
+        box-shadow: none;
+        font-size: 25px;
+        border: none;
+    }
+    .navbar-collapse{
+        font-size: 20px;
+        ul{
+            @include respond(350){
+                padding: 10px 10px 0;
+                font-size: 17px;
+            }
+            @include respond(850){
+                font-size: 20px;
+            }
+            @include respond(1050){
+                padding: 0;
+            }
+            .nav-item{
+                a{
+                    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+                    color: #f8f8f8;
+                    transition: all .5s;
+                    &:hover,
+                    &.active{
+                        color: $mainColor;
+                        text-shadow: 0 0 10px rgba(255, 215, 0, 1);
+                    }
+                }
+            }
+        }
+        .icons{
+            color: #f8f8f8;
+            cursor: default;
+            @include respond(350){
+                padding: 0 0 10px 10px;
+                font-size: 17px;
+            }
+            @include respond(850){
+                font-size: 20px;
+            }
+            @include respond(1050){
+                padding: 0;
+            }
+            i{
+                cursor: pointer;
+                transition: all .5s;
+                &:hover{
+                    color: $mainColor;
+                    text-shadow: 0 0 10px rgba(255, 215, 0, 1);
+                }
+            }
+        }
+    }
+}

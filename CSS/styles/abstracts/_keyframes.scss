@@ -1,0 +1,58 @@
+// Home Page
+@keyframes rotatingRight {
+    from{
+        transform: rotate(0deg) translate(-50%,-50%);
+    }
+    to{
+        transform: rotate(360deg) translate(-50%,-50%);
+    }
+}
+@keyframes rotatingLeft {
+    from{
+        transform: rotate(0deg) translate(50%,50%);
+    }
+    to{
+        transform: rotate(360deg) translate(50%,50%);
+    }
+}
+
+// OurStory Page
+@keyframes pulse {
+    0%, 100%{ 
+        box-shadow: 0 0 5px #c5a463; 
+    }
+    50%{ 
+        box-shadow: 0 0 20px #c5a463; 
+    }
+}
+@keyframes upDown {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+// Loading Page
+@keyframes scaling {
+    from{
+        opacity: .2;
+        transform: scale(.4);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+@keyframes slide {
+    0% { 
+        left: -60px;
+    }
+    50% { 
+        left: 180px;
+    }
+    100% {
+        left: -60px;
+    }
+}

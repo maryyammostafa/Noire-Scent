@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "Nightfall Noir",
+        "image": "Images/products/male-1.png",
+        "category": "Male",
+        "price": 45,
+        "rate": "★★★★☆",
+        "tagline": "Tonka & amber for evening elegance.",
+        "description": "A smooth, dark, and silky composition blending amber warmth with refined tonka layers. Crafted for men who want a confident, mysterious aura that lasts through the night.",
+        "badge": ""
+    },
+    {
+        "id": 2,
+        "name": "Wild Vertigo",
+        "image": "Images/products/male-2.png",
+        "category": "Male",
+        "price": 30,
+        "rate": "★★★☆☆",
+        "tagline": "Green aromatic notes with sharp pepper.",
+        "description": "Bold, energetic, and modern—fresh green notes collide with a peppery twist to create a vibrant scent that fuels motion, ambition, and nonstop daytime confidence.",
+        "badge": "new"
+    },
+    {
+        "id": 3,
+        "name": "Sultan Smoke",
+        "image": "Images/products/male-3.png",
+        "category": "Male",
+        "price": 50,
+        "rate": "★★★★★",
+        "tagline": "Oriental oud with smoky richness.",
+        "description": "A royal oud masterpiece infused with smoky depth and warm spices. Rich, dominant, and luxurious, it delivers a commanding masculine presence from the first spray.",
+        "badge": "bestseller"
+    },
+    {
+        "id": 4,
+        "name": "Midnight Creed",
+        "image": "Images/products/male-4.png",
+        "category": "Male",
+        "price": 40,
+        "rate": "★★★★☆",
+        "tagline": "Leather and musk with a noble edge.",
+        "description": "A magnetic blend of refined leather and soft musk, designed to give a strong yet elegant masculine signature. Smooth, deep, and perfect for evening sophistication.",
+        "badge": "limited"
+    },
+    {
+        "id": 5,
+        "name": "Royal Havana",
+        "image": "Images/products/male-5.png",
+        "category": "Male",
+        "price": 35,
+        "rate": "★★★★★",
+        "tagline": "Tobacco vanilla gentleman aroma.",
+        "description": "Warm tobacco meets creamy vanilla and subtle spices, echoing the charm of Havana nights. A cozy, inviting masculine scent with a timeless gentleman vibe.",
+        "badge": "bestseller"
+    },
+    {
+        "id": 6,
+        "name": "Black Voyager",
+        "image": "Images/products/male-6.png",
+        "category": "Male",
+        "price": 35,
+        "rate": "★★★★☆",
+        "tagline": "Citrus freshness with dark woody finish.",
+        "description": "A modern contrast of bright citrus opening notes fading into a bold woody base. Versatile, adventurous, and perfect for men who love dynamic everyday freshness.",
+        "badge": ""
+    },
+
+    {
+        "id": 7,
+        "name": "Crystal Petals",
+        "image": "Images/products/female-1.png",
+        "category": "Female",
+        "price": 55,
+        "rate": "★★★☆☆",
+        "tagline": "Sweet floral sparkle.",
+        "description": "A youthful floral blend with a bright, sweet sparkle that feels fresh and uplifting. Designed for cheerful, energetic women who love light, glowing scents.",
+        "badge": "new"
+    },
+    {
+        "id": 8,
+        "name": "Golden Amira",
+        "image": "Images/products/female-2.png",
+        "category": "Female",
+        "price": 45,
+        "rate": "★★★★★",
+        "tagline": "Jasmine with warm honey amber.",
+        "description": "A luminous fusion of jasmine, honey, and warm amber that radiates richness. Elegant, royal, and designed to bring out the queen in every woman.",
+        "badge": "limited"
+    },
+    {
+        "id": 9,
+        "name": "Rosalia Essence",
+        "image": "Images/products/female-3.png",
+        "category": "Female",
+        "price": 30,
+        "rate": "★★★★☆",
+        "tagline": "Fresh roses with fruity sparkle.",
+        "description": "A crisp and romantic rose bouquet uplifted with bright fruity accents. Feminine, delicate, and perfect for everyday softness with a modern twist.",
+        "badge": ""
+    },
+    {
+        "id": 10,
+        "name": "Luminous Peony",
+        "image": "Images/products/female-4.png",
+        "category": "Female",
+        "price": 40,
+        "rate": "★★★★☆",
+        "tagline": "Bright, fresh peony bouquet.",
+        "description": "An airy peony fragrance that blends fresh florals with soft radiance. Clean, light, and perfect for a daily elegant presence.",
+        "badge": ""
+    },
+    {
+        "id": 11,
+        "name": "Fleur Royale",
+        "image": "Images/products/female-5.png",
+        "category": "Female",
+        "price": 50,
+        "rate": "★★★★★",
+        "tagline": "Lux white florals.",
+        "description": "A luxurious white floral composition with deep, timeless elegance. Smooth, feminine, and crafted for women who love classic, sophisticated scents.",
+        "badge": "bestseller"
+    },
+    {
+        "id": 12,
+        "name": "Blush Mirage",
+        "image": "Images/products/female-6.png",
+        "category": "Female",
+        "price": 35,
+        "rate": "★★★☆☆",
+        "tagline": "Soft peach haze.",
+        "description": "A dreamy fusion of peachy sweetness, soft florals, and airy musk. Gentle, warm, and ideal for creating a soft feminine aura.",
+        "badge": ""
+    },
+    {
+        "id": 13,
+        "name": "Pink Aura",
+        "image": "Images/products/female-7.png",
+        "category": "Female",
+        "price": 30,
+        "rate": "★★★☆☆",
+        "tagline": "Fresh strawberry floral.",
+        "description": "Playful strawberry notes wrapped in soft florals to create a joyful, sweet, and radiant feminine scent full of freshness and charm.",
+        "badge": "new"
+    },
+
+    {
+        "id": 14,
+        "name": "Urban Echo",
+        "image": "Images/products/us-1.png",
+        "category": "Unisex",
+        "price": 50,
+        "rate": "★★★☆☆",
+        "tagline": "Modern woody freshness.",
+        "description": "A clean and modern blend of fresh woods and airy notes. Balanced and lightweight, ideal for both men and women who love minimalist scents.",
+        "badge": ""
+    },
+    {
+        "id": 15,
+        "name": "Silver Bloom",
+        "image": "Images/products/us-2.png",
+        "category": "Unisex",
+        "price": 55,
+        "rate": "★★★★☆",
+        "tagline": "Neutral floral musk.",
+        "description": "A soft fusion of gentle florals and crisp musk to create a balanced unisex scent. Smooth, calming, and wearable anytime, anywhere.",
+        "badge": ""
+    },
+    {
+        "id": 16,
+        "name": "Cedar Halo",
+        "image": "Images/products/us-3.png",
+        "category": "Unisex",
+        "price": 45,
+        "rate": "★★★★☆",
+        "tagline": "Clean cedar & musk.",
+        "description": "Minimalistic and elegant, Cedar Halo blends clean cedarwood with soft musk to craft a cozy, universally appealing scent with modern simplicity.",
+        "badge": "bestseller"
+    },
+    {
+        "id": 17,
+        "name": "Whisper Sand",
+        "image": "Images/products/us-4.png",
+        "category": "Unisex",
+        "price": 30,
+        "rate": "★★★☆☆",
+        "tagline": "Smooth warm minimal scent.",
+        "description": "A warm, soft blend of cozy notes designed to feel natural and effortless on anyone. Subtle, comforting, and perfect for everyday calm.",
+        "badge": ""
+    },
+    {
+        "id": 18,
+        "name": "Cloud Oud",
+        "image": "Images/products/us-5.png",
+        "category": "Unisex",
+        "price": 35,
+        "rate": "★★★★☆",
+        "tagline": "Soft minimal oud.",
+        "description": "A clean and airy oud fragrance with gentle sweetness and modern softness. Light, elegant, and perfect for those who love subtle oud without heaviness.",
+        "badge": "limited"
+    }
+]

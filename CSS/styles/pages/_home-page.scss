@@ -1,0 +1,260 @@
+@use "../abstracts" as *;
+
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.98), rgba(255,215,0,0.01));
+    @include flex;
+    &>img{
+        @include position($b: -280px, $l: 0);
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+        opacity: .5;
+        @include respond(450){
+            bottom: -29%;
+        }
+        @include respond(350){
+            bottom: -28%;
+        }
+    }
+    .part{
+        @include flex;
+        &:nth-of-type(1){
+            .item{
+                @include respond(350){
+                    padding: 130px 10px 0;
+                }
+                @include respond(350){
+                    padding: 140px 10px 0;
+                }
+                @include respond(850){
+                    padding: initial;
+                }
+                h2{
+                    font-size: 60px;
+                    @include respond(350){
+                        font-size: 30px;
+                    }
+                    @include respond(650){
+                        font-size: 40px;
+                    }
+                    @include respond(1250){
+                        font-size: 50px;
+                    }
+                }
+                p{
+                    font-size: 17px;
+                    line-height: 1.5;
+                    letter-spacing: 1px;
+                    @include respond(350){
+                        font-size: 14px;
+                    }
+                    @include respond(650){
+                        font-size: 16px;
+                    }
+                    @include respond(1250){
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(2){
+            // background: url(../Images/image-from-rawpixel-id-13107666-png.png) center/cover no-repeat;
+            .item{
+                position: relative;
+                img{
+                    position: relative;
+                    width: 550px;
+                    @include respond(350){
+                        width: 350px;
+                    }
+                    @include respond(1050){
+                        width: 430px;
+                    }
+                    filter: contrast(1.05);
+                }
+            }
+        }
+    }
+}
+
+#About{
+    position: relative;
+    padding-top: 0;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.98), rgba(255,215,0,0.01));
+    .container{
+        position: relative;
+        p{
+            font-size: 20px;
+            width: 60%;
+            margin: 22px auto;
+            letter-spacing: 1px;
+            @include respond(350){
+                width: 95%;
+                font-size: 15px;
+            }
+            @include respond(850){
+                font-size: 17px;
+            }
+            @include respond(1050){
+                width: 70%;
+            }
+        }
+    }
+}
+
+#Signature{
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.98), rgba(255,215,0,0.01));
+    .container{
+        &>p{
+            font-size: 20px;
+            @include respond(350){
+                font-size: 14px;
+            }
+            @include respond(850){
+                font-size: 17px;
+            }
+        }
+        .owl-carousel{
+            .owl-item{
+                position: relative;
+                height: 540px;
+                border-radius: 10px;
+                transform: scale(0.9);
+                transition: all .5s;
+                @include flex;
+                @include respond(350){
+                    width: 280px;
+                    height: 400px;
+                }
+                @include respond(650){
+                    height: 370px;
+                }
+                @include respond(850){
+                    height: 350px;
+                }
+                @include respond(1050){
+                    height: 420px;
+                }
+                &::before{
+                    @include creatEle(100%,100%);
+                    @include position($t: 0, $l: 0);
+                    border: 1.5px solid rgba(255, 217, 0, 0.5);
+                    border-radius: 10px;
+                    transform: translate(20px,-20px);
+                    @include respond(350){
+                        transform: translate(15px,-15px);
+                    }
+                    @include respond(1050){
+                        transform: translate(20px,-20px);
+                    }
+                }
+                &:not(.center){
+                    transform: scale(0.7);
+                    filter: blur(2px) brightness(0.6);
+                    &::after{
+                        @include creatEle(100%,100%);
+                        @include position($t: 0, $l: 0);
+                    }
+                }
+                &.center{
+                    .rotatingBorder{
+                        @include position($t: 0, $l: 0);
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        &::before,
+                        &::after{
+                            @include creatEle(100%,100%);
+                            @include position($t: 0, $l: 0);
+                            background: conic-gradient(from 0deg,#7a5c00,#c49b07,#ffd700,#c49b07,#7a5c00);
+                            transform: translate(50%,50%);
+                            animation: rotatingLeft 7s linear infinite;
+                        }
+                        &::after{
+                            animation: rotatingRight 7s linear infinite;
+                        }
+                    }
+                }
+                .box{
+                    position: relative;
+                    background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+                    width: 99%;
+                    height: 99%;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    padding: 10px;
+                    &::before{
+                        @include creatEle(0%,100%);
+                        @include position($t: 0, $l: 50%);
+                        background-color: rgba($color: #000, $alpha: 0.9);
+                        transition-duration: 1s;
+                    }
+                    img{
+                        width: 450px; 
+                        @include respond(350){
+                            width: 300px;
+                        }
+                        @include respond(450){
+                            width: 300px;
+                        }
+                        margin: auto;
+                    }
+                    h3{
+                        font-size: 40px;
+                        color: $mainColor;
+                        text-shadow: $mainShadow;
+                        @include respond(350){
+                            font-size: 30px;
+                        }
+                    }
+                    p{
+                        font-size: 18px;
+                        @include respond(350){
+                            font-size: 16px;
+                        }
+                    }
+                    .button{
+                        @include position($t: 50%, $l: 50%);
+                        @include flex;
+                        width: 100%;
+                        transform: translate(-50%,-50%);
+                        opacity: 0;
+                        transition-duration: .5s;
+                        a{
+                            padding: 15px;
+                            background-color: rgba(255, 217, 0, 0.2);
+                            box-shadow: 0 0 18px rgba(212,175,55,0.12), 0 1px 0 rgba(255,255,255,0.04) inset;
+                            border-radius: 20px;
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: #ccc;
+                            @include respond(650){
+                                font-size: 16px;
+                                padding: 12px;
+                            }
+                            @include respond(1250){
+                                font-size: 18px;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                    &:hover{
+                        &::before{
+                            width: 100%;
+                            left: 0;
+                        }
+                        .button{
+                            display: flex;
+                            opacity: 1;
+                            transition-delay: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
