@@ -10,7 +10,7 @@ let lastScroll = 0,
 // MAGIC MOUSE INIT
 magicMouse({
 	"outerWidth": 35,
-	"outerHeight": 35,
+	"outerHeight": 35
 });
 
 // Calls navScrolling() on scroll to hide/show navbar based on scroll direction

@@ -1,3 +1,7 @@
+html, * {
+  cursor: none;
+}
+
 body {
   background-color: #0e0e0e;
   color: #f5f5f5;
@@ -234,7 +238,6 @@ p {
   left: initial;
   z-index: initial;
   color: #c5a572;
-  cursor: pointer;
 }
 @media (max-width: 1300px) {
   .popUp .box .row .part1 img {
@@ -315,7 +318,6 @@ p {
   justify-content: center;
   align-items: center;
   transition-duration: 0.3s;
-  cursor: pointer;
 }
 .popUp .box .row .part2 .icons i.remove {
   background-color: #c5a572;
@@ -420,7 +422,6 @@ p {
   justify-content: center;
   align-items: center;
   transition-duration: 0.3s;
-  cursor: pointer;
 }
 @media (max-width: 1300px) {
   .popUp.cart .box .part .item i {
@@ -634,6 +635,10 @@ p {
   z-index: 1000;
 }
 
+#magicPointer a {
+  background-color: #000 !important;
+}
+
 #magicMouseCursor {
   border: 2px solid #c5a572 !important;
   z-index: 1000;
@@ -796,7 +801,6 @@ nav.navbar .navbar-collapse ul .nav-item a:hover, nav.navbar .navbar-collapse ul
 }
 nav.navbar .navbar-collapse .icons {
   color: #f8f8f8;
-  cursor: default;
 }
 @media (max-width: 1300px) {
   nav.navbar .navbar-collapse .icons {
@@ -815,7 +819,6 @@ nav.navbar .navbar-collapse .icons {
   }
 }
 nav.navbar .navbar-collapse .icons i {
-  cursor: pointer;
   transition: all 0.5s;
 }
 nav.navbar .navbar-collapse .icons i:hover {
@@ -877,14 +880,10 @@ footer .container img {
     font-size: 15px;
   }
 }
-footer .container .socials {
-  cursor: default;
-}
 footer .container .socials a i {
   color: #c5a572;
   font-size: 20px;
   margin: 0 8px;
-  cursor: pointer;
   transition: 0.3s;
 }
 @media (max-width: 1300px) {
@@ -1401,7 +1400,6 @@ header .part:nth-of-type(2) .item img {
   justify-content: center;
   align-items: center;
   transition-duration: 0.3s;
-  cursor: pointer;
 }
 #Collections .swiper .swiper-slide .item .head .icons i.remove {
   background-color: #c5a572;
