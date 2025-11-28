@@ -32,7 +32,7 @@ function loadProducts() {
             products = data;
             return products;
         })
-        .catch(err => console.error("Error: ", err));
+        .catch(err => console.log("Error: ", err));
 }
 // Renders products into their proper category sliders in the Collections section
 function renderProducts(){

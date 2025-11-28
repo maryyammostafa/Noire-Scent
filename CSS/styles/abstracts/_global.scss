@@ -39,6 +39,7 @@ p { color: #a7a7a7; }
     font-size: 18px;
     letter-spacing: 1px;
     padding: 10px 20px;
+    cursor: none;
     @include respond(350){ font-size: 14px; }
     @include respond(650){ font-size: 16px; }
     @include respond(1250){ font-size: 18px; }
@@ -47,6 +48,10 @@ p { color: #a7a7a7; }
         background-color: #000;
         box-shadow: 0 0 40px rgba(212,175,55,0.20), 0 2px 0 rgba(255,255,255,0.05) inset;
     }
+}
+
+button:not(:disabled){
+    cursor: none;
 }
 
 .title{
@@ -144,6 +149,7 @@ p { color: #a7a7a7; }
         .close{
             @include position($t: 15px, $r: 20px);
             color: $mainColor;
+            padding: 5px;
         }
         .row{
             .part1{
@@ -211,6 +217,11 @@ p { color: #a7a7a7; }
                         justify-content: center;
                         align-items: center;
                         transition-duration: .3s;
+                        cursor: pointer;
+                        &:hover{
+                            box-shadow: 0 0 18px rgba(212, 175, 55, 0.12), 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+                            background-color: rgba(0,0,0,0.6);
+                        }
                         &.remove{
                             background-color: $mainColor;
                             color: rgba(0,0,0,0.6);
@@ -226,9 +237,6 @@ p { color: #a7a7a7; }
                         &.inFav{
                             background-color: $mainColor;
                             color: rgba(0,0,0,0.8);
-                        }
-                        &:hover{
-                            box-shadow: 0 0 18px rgba(212, 175, 55, 0.12), 0 1px 0 rgba(255, 255, 255, 0.04) inset;
                         }
                     }
                 }
@@ -272,6 +280,7 @@ p { color: #a7a7a7; }
                     justify-content: center;
                     align-items: center;
                     transition-duration: .3s;
+                    cursor: pointer;
                     @include respond(350){
                         font-size: 14px;
                         width: 28px;
@@ -403,10 +412,8 @@ p { color: #a7a7a7; }
     box-shadow: $mainShadow;
     z-index: 1000;
 }
-#magicPointer a{
-    background-color: #000 !important;
-}
 #magicMouseCursor{
     border: 2px solid $mainColor !important;
     z-index: 1000;
+    border-radius: 18px !important;
 }
