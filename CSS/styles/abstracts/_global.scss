@@ -1,7 +1,6 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-html,* { cursor: none; }
 body{
     background-color: #0e0e0e;
     color: #f5f5f5;
@@ -39,7 +38,6 @@ p { color: #a7a7a7; }
     font-size: 18px;
     letter-spacing: 1px;
     padding: 10px 20px;
-    cursor: none;
     @include respond(350){ font-size: 14px; }
     @include respond(650){ font-size: 16px; }
     @include respond(1250){ font-size: 18px; }
@@ -48,10 +46,6 @@ p { color: #a7a7a7; }
         background-color: #000;
         box-shadow: 0 0 40px rgba(212,175,55,0.20), 0 2px 0 rgba(255,255,255,0.05) inset;
     }
-}
-
-button:not(:disabled){
-    cursor: none;
 }
 
 .title{
@@ -150,6 +144,7 @@ button:not(:disabled){
             @include position($t: 15px, $r: 20px);
             color: $mainColor;
             padding: 5px;
+            cursor: pointer;
         }
         .row{
             .part1{
@@ -405,15 +400,4 @@ button:not(:disabled){
     .swal2-success-circular-line-left,
     .swal2-success-circular-line-right,
     .swal2-success-fix{ display: none; }
-}
-
-#magicPointer{
-    background-color: $mainColor !important;
-    box-shadow: $mainShadow;
-    z-index: 1000;
-}
-#magicMouseCursor{
-    border: 2px solid $mainColor !important;
-    z-index: 1000;
-    border-radius: 18px !important;
 }

@@ -1,7 +1,3 @@
-html, * {
-  cursor: none;
-}
-
 body {
   background-color: #0e0e0e;
   color: #f5f5f5;
@@ -43,7 +39,6 @@ p {
   font-size: 18px;
   letter-spacing: 1px;
   padding: 10px 20px;
-  cursor: none;
 }
 @media (max-width: 1300px) {
   .btn,
@@ -68,10 +63,6 @@ p {
   border-color: #000;
   background-color: #000;
   box-shadow: 0 0 40px rgba(212, 175, 55, 0.2), 0 2px 0 rgba(255, 255, 255, 0.05) inset;
-}
-
-button:not(:disabled) {
-  cursor: none;
 }
 
 .title {
@@ -244,6 +235,7 @@ button:not(:disabled) {
   z-index: initial;
   color: #c5a572;
   padding: 5px;
+  cursor: pointer;
 }
 @media (max-width: 1300px) {
   .popUp .box .row .part1 img {
@@ -638,18 +630,6 @@ button:not(:disabled) {
   display: none;
 }
 
-#magicPointer {
-  background-color: #c5a572 !important;
-  box-shadow: 0 0 10px rgb(255, 215, 0);
-  z-index: 1000;
-}
-
-#magicMouseCursor {
-  border: 2px solid #c5a572 !important;
-  z-index: 1000;
-  border-radius: 18px !important;
-}
-
 @keyframes rotatingRight {
   from {
     transform: rotate(0deg) translate(-50%, -50%);
@@ -807,6 +787,7 @@ nav.navbar .navbar-collapse ul .nav-item a:hover, nav.navbar .navbar-collapse ul
 }
 nav.navbar .navbar-collapse .icons {
   color: #f8f8f8;
+  cursor: default;
 }
 @media (max-width: 1300px) {
   nav.navbar .navbar-collapse .icons {
@@ -826,6 +807,7 @@ nav.navbar .navbar-collapse .icons {
 }
 nav.navbar .navbar-collapse .icons i {
   transition: all 0.5s;
+  cursor: pointer;
 }
 nav.navbar .navbar-collapse .icons i:hover {
   color: #c5a572;
@@ -885,6 +867,9 @@ footer .container img {
   footer .container p {
     font-size: 15px;
   }
+}
+footer .container .socials {
+  cursor: default;
 }
 footer .container .socials a i {
   color: #c5a572;

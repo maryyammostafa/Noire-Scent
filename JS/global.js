@@ -7,12 +7,6 @@ let lastScroll = 0,
     emailRegex = /^\s*[A-Za-z]+[A-Za-z0-9_\-\.]*@(gmail\.com|yahoo\.org|outlook\.com)\s*$/,
     phoneRegex = /^\s*(02)?01(0|1|2|5)[0-9]{8}\s*$/;
 
-// MAGIC MOUSE INIT
-magicMouse({
-	"outerWidth": 35,
-	"outerHeight": 35
-});
-
 // Calls navScrolling() on scroll to hide/show navbar based on scroll direction
 $(window).scroll(() => {navScrolling();});
 

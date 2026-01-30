@@ -79,6 +79,7 @@ nav.navbar{
         }
         .icons{
             color: #f8f8f8;
+            cursor: default;
             @include respond(350){
                 padding: 0 0 10px 10px;
                 font-size: 17px;
@@ -91,6 +92,7 @@ nav.navbar{
             }
             i{
                 transition: all .5s;
+                cursor: pointer;
                 &:hover{
                     color: $mainColor;
                     text-shadow: 0 0 10px rgba(255, 215, 0, 1);
