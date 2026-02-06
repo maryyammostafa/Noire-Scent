@@ -12,12 +12,12 @@ $(window).scroll(() => {navScrolling();});
 
 loadLocalStorage();
 isCartEmpty();
-// PREVENT CLICK PROPAGATION ON POPUPS
+// Prevent click propagation on popUps
 $(".popUp .box").click((e) => {
     e.stopPropagation(); // Prevent clicks inside popup from closing it
 });
 
-// PARTICLES CONFIG
+// Particles config
 let particles = {
     fullScreen: { enable: false },
     particles: {
@@ -62,7 +62,7 @@ let particles = {
 // Initialize particles on element with ID 'tsparticles'
 tsParticles.load("tsparticles", particles);
 
-// DOCUMENT READY
+// Document ready
 $(document).ready(function () {
     setTimeout(function () {
         $(".loading").fadeOut(1000, function () {

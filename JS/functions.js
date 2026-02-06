@@ -171,11 +171,8 @@ function removeFromCart(productId){
 }
 // Removes product from inside the Cart popup
 function removeBtnInCart(productId){
-    cartProducts = cartProducts.filter((item) => {return item.id != productId ;});
-    checkButtons();
-    updateLocalStorage();
+    removeFromCart(productId);
     showProductInCart();
-    isCartEmpty();
     adjustPopUp();
 }
 // Appears correct UI message when cart/fav are empty or not
