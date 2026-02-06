@@ -94,10 +94,8 @@ function closePopUp(){
 }
 // Adds scroll class if popup content is taller than the popup box
 function adjustPopUp() {
-    $(".popUp.cart").removeClass("scroll");
-    if ($(".popUp.cart .box")[0].scrollHeight > $(".popUp.cart").height()) {
-        $(".popUp.cart").addClass("scroll");
-    }
+    let bool = $(".popUp.cart .box")[0].scrollHeight > $(".popUp.cart").height();
+    $(".popUp.cart").toggleClass("scroll", bool);
 }
 
 // Renders cart items inside the Cart popup
@@ -173,7 +171,6 @@ function removeFromCart(productId){
 function removeBtnInCart(productId){
     removeFromCart(productId);
     showProductInCart();
-    adjustPopUp();
 }
 // Appears correct UI message when cart/fav are empty or not
 function isCartEmpty(){
