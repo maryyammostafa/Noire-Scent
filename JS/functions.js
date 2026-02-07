@@ -1,12 +1,7 @@
 // Handles navbar visibility based on scroll direction
 function navScrolling(){
-    let currentScroll = window.scrollY
-    if(window.scrollY > lastScroll){
-        $("nav.navbar").addClass("hide");
-    }
-    else{
-        $("nav.navbar").removeClass("hide");
-    }
+    let currentScroll = window.scrollY;
+    $("nav.navbar").toggleClass("hide", currentScroll > lastScroll);
     lastScroll = currentScroll;
 }
 
@@ -94,8 +89,8 @@ function closePopUp(){
 }
 // Adds scroll class if popup content is taller than the popup box
 function adjustPopUp() {
-    let bool = $(".popUp.cart .box")[0].scrollHeight > $(".popUp.cart").height();
-    $(".popUp.cart").toggleClass("scroll", bool);
+    let bool = $(".popUp.active .box")[0].scrollHeight > $(".popUp.active").height();
+    $(".popUp.active").toggleClass("scroll", bool);
 }
 
 // Renders cart items inside the Cart popup
@@ -104,7 +99,7 @@ function showProductInCart(){
     cartProducts.forEach(cartProduct => {
         let product = getProduct(cartProduct.id);
         $(".popUp.cart .box .row").append(`
-            <div class="col-6 col-lg-4 part">
+            <div class="col-6 col-lg-4 part" data-id="${product.id}">
                 <div class="item">
                     <img src="${product.image}" class="img-fluid" alt="">
                     <h4>${product.name}</h4>
@@ -170,7 +165,8 @@ function removeFromCart(productId){
 // Removes product from inside the Cart popup
 function removeBtnInCart(productId){
     removeFromCart(productId);
-    showProductInCart();
+    $(`.popUp.cart .part[data-id="${productId}"]`).remove();
+    adjustPopUp();
 }
 // Appears correct UI message when cart/fav are empty or not
 function isCartEmpty(){
